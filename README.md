@@ -31,3 +31,9 @@ Based off of demo UML Ryan did
 
 ![Lab 3](assets/lab3-UML.png)
 
+## Collaborators
+
+Jordan Covington 
+Joe Davitt
+Rafael Aldana
+Ken Holt
