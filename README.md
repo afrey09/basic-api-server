@@ -6,7 +6,7 @@
 
 ### Links and Resources
 GitHub Actions ci/cd
-Prod back-end server url
+Prod back-end server url - https://basic-express-server-0xmd.onrender.com
 
 ### Setup
 .env requirements (where applicable)
