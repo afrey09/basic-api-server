@@ -16,9 +16,9 @@ afterAll(async () => {
 
 describe('server', () => {
   it('create clothes', async () => {
-    const response = await request.post('./clothes').send({
+    const response = await request.post('/clothes').send({
       name: 'T-shirt',
-      description: ' a shirt',
+      description: 'one t-shirt',
       price: 1000,
 
     });
@@ -27,20 +27,20 @@ describe('server', () => {
     expect(response.body[0].name).toEqual('T-shirt');
     expect(response.body[0].description).toEqual('one t-shirt');
     expect(response.body[0].price).toEqual(1000);
-    expect(response.body.id).toBeTruthy();
+    expect(response.body[0].id).toBeTruthy();
   });
 
   it('get clothes', async () => {
-    const response = await request.get('./clothes');
+    const response = await request.get('/clothes');
     expect(response.status).toEqual(200);
     expect(response.body[0].name).toEqual('T-shirt');
-    expect(response.body[0].description).toEqual('one t- shirt');
+    expect(response.body[0].description).toEqual('one t-shirt');
     expect(response.body[0].price).toEqual(1000);
     expect(response.body.id).toBeTruthy();
   });
 
   it(`gets all clothes`, async () => {
-    const response = await request.get('./clothes');
+    const response = await request.get('/clothes');
 
     expect(response.status).toEqual(200);
     expect(response.body.length).toBeGreaterThan(0);
