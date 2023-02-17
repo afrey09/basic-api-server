@@ -1,7 +1,7 @@
 {
   "name": "basic-api-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Author: Adrienne Frey ### Problem Domain   Practice learning to build a REST API using express and creating endpoints that perform CRUD operations on a database",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

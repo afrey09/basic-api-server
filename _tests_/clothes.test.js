@@ -24,10 +24,10 @@ describe('server', () => {
     });
 
     expect(response.status).toEqual(200);
-    expect(response.body[0].name).toEqual('T-shirt');
-    expect(response.body[0].description).toEqual('one t-shirt');
-    expect(response.body[0].price).toEqual(1000);
-    expect(response.body[0].id).toBeTruthy();
+    expect(response.body.name).toEqual('T-shirt');
+    expect(response.body.description).toEqual('one t-shirt');
+    expect(response.body.price).toEqual(1000);
+    expect(response.body.id).toBeTruthy();
   });
 
   it('get clothes', async () => {
@@ -36,7 +36,7 @@ describe('server', () => {
     expect(response.body[0].name).toEqual('T-shirt');
     expect(response.body[0].description).toEqual('one t-shirt');
     expect(response.body[0].price).toEqual(1000);
-    expect(response.body.id).toBeTruthy();
+    expect(response.body[0].id).toBeTruthy();
   });
 
   it(`gets all clothes`, async () => {
